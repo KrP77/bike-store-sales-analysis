@@ -21,7 +21,7 @@ Our goal is to:
 
 ## 📂 Dataset  
 The dataset used in this project comes from Kaggle:  
-🔗 [Bike Store Sales Dataset](https://www.kaggle.com/datasets/your-dataset-link-here](https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database)
+🔗 [Bike Store Sales Dataset](https://www.kaggle.com/datasets/your-dataset-link-here](https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database/)
 
 ---
 
