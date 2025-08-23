@@ -38,6 +38,6 @@ The dataset used in this project comes from Kaggle:
 ✅ Uploaded raw dataset into repo  
 ✅ ERD diagram for database schema  
 ✅ Repository structure created  
-🔄 Next: Write DDL scripts to create **Bronze layer tables** in SSMS  
+🔄 Next: Create architecture diagram and plan exact approach
 
 ---
