@@ -38,6 +38,7 @@ The dataset used in this project comes from Kaggle:
 ✅ Uploaded raw dataset into repo  
 ✅ ERD diagram for database schema  
 ✅ Repository structure created  
-🔄 Next: Create architecture diagram and plan exact approach
+✅ Created High level architecture diagram   
+🔄 Next: Create database and start working on schema and DDL.
 
 ---
