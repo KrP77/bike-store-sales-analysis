@@ -25,6 +25,12 @@ The dataset used in this project comes from Kaggle:
 
 ---
 
+## 🏗️ High-Level Architecture  
+Below is the high-level architecture diagram showing the **data flow**.  
+
+![Architecture Diagram](Docs/High%20Level%20Architecture.png)
+
+---
 
 ## 🛠️ Tools & Technologies  
 - **SQL Server (SSMS)** → schema creation, ETL, procedures  
