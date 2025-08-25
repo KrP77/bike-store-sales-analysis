@@ -45,6 +45,8 @@ Below is the high-level architecture diagram showing the **data flow**.
 ✅ ERD diagram for database schema  
 ✅ Repository structure created  
 ✅ Created High level architecture diagram   
-🔄 Next: Create database and start working on schema and DDL.
+✅ Created data base and schemas   
+✅ Created ddl bronze and procedure to load data in bronze layer.   
+🔄 Next: Work on silver layer
 
 ---
