@@ -47,6 +47,8 @@ Below is the high-level architecture diagram showing the **data flow**.
 ✅ Created High level architecture diagram   
 ✅ Created data base and schemas   
 ✅ Created ddl bronze and procedure to load data in bronze layer.   
-🔄 Next: Work on silver layer
+✅ Did quality check on bronze layer and made required changes and conversions.   
+✅ Created ddl silver and procedure to load data in silver layer from bronze with all data quality checks, required conversions and derived columns for extra metrics.   
+🔄 Next: Plan and work on gold layer
 
 ---
