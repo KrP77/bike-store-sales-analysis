@@ -50,6 +50,7 @@ Below is the high-level architecture diagram showing the **data flow**.
 ✅ Did quality check on bronze layer and made required changes and conversions.   
 ✅ Created ddl silver and procedure to load data in silver layer from bronze with all data quality checks, required conversions and derived columns for extra metrics.   
 ✅ Created data model(star schema) diagram for gold layer.
+
 ✅ Created ddl gold and procedure to load data from silver to gold in the form of fact and dim tables.
 
 🔄 Next: Work on indexing, create views and answer some business questions.
