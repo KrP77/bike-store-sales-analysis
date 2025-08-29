@@ -72,6 +72,7 @@ CREATE TABLE silver.sales_orders (
     order_id           INT,
     customer_id        INT,
     order_status       INT,
+    order_status_desc  NVARCHAR(20),   -- dervied : mapping
     store_id           INT,
     staff_id           INT,
     order_date         DATE,
@@ -156,3 +157,4 @@ CREATE TABLE silver.production_stocks (
     out_of_stock    BIT  -- derived column: 1 if quantity = 0, else 0
 );
 GO
+
