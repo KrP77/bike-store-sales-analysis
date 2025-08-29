@@ -210,6 +210,7 @@ BEGIN
             order_id,
             customer_id,
             order_status, 
+            order_status_desc,
             store_id, 
             staff_id,
             order_date, 
@@ -224,6 +225,13 @@ BEGIN
             TRY_CONVERT(INT, NULLIF(order_id, 'NULL'))       AS order_id,
             TRY_CONVERT(INT, NULLIF(customer_id, 'NULL'))    AS customer_id,
             TRY_CONVERT(INT, NULLIF(order_status, 'NULL'))   AS order_status,
+            CASE TRY_CONVERT(INT, NULLIF(order_status, 'NULL'))  -- derived
+                WHEN 1 THEN 'Pending'
+                WHEN 2 THEN 'Processing'
+                WHEN 3 THEN 'Rejected'
+                WHEN 4 THEN 'Completed'
+            END AS order_status_desc,
+
             TRY_CONVERT(INT, NULLIF(store_id, 'NULL'))       AS store_id,
             TRY_CONVERT(INT, NULLIF(staff_id, 'NULL'))       AS staff_id,
 
