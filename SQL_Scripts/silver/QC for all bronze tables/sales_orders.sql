@@ -78,6 +78,18 @@ SELECT
 FROM bronze.sales_orders
 WHERE order_status IS NULL;
 
+-- do mapping 
+SELECT
+    order_status,
+    CASE TRY_CONVERT(INT, NULLIF(order_status, 'NULL'))
+        WHEN 1 THEN 'Pending'
+        WHEN 2 THEN 'Processing'
+        WHEN 3 THEN 'Rejected'
+        WHEN 4 THEN 'Completed'
+    END AS order_status_desc
+FROM bronze.sales_orders;
+
+
 
 ----------------------
 -- order_date
@@ -214,6 +226,12 @@ SELECT
     TRY_CONVERT(INT, NULLIF(order_id, 'NULL'))       AS order_id,
     TRY_CONVERT(INT, NULLIF(customer_id, 'NULL'))    AS customer_id,
     TRY_CONVERT(INT, NULLIF(order_status, 'NULL'))   AS order_status,
+    CASE TRY_CONVERT(INT, NULLIF(order_status, 'NULL')) -- dervied
+        WHEN 1 THEN 'Pending'
+        WHEN 2 THEN 'Processing'
+        WHEN 3 THEN 'Rejected'
+        WHEN 4 THEN 'Completed'
+    END AS order_status_desc,
     TRY_CONVERT(INT, NULLIF(store_id, 'NULL'))       AS store_id,
     TRY_CONVERT(INT, NULLIF(staff_id, 'NULL'))       AS staff_id,
 
